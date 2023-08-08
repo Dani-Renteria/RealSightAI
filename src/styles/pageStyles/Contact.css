@@ -1,0 +1,242 @@
+.contactWrapper{
+    position: absolute;
+    width: 100%;
+    height: 1400px;
+    top:88px;
+    background: linear-gradient(180deg, rgba(59, 118, 239, 0.30) 0%,rgba(239, 242, 248, 1) 15.50%);
+    display: flex;
+    justify-content: center;
+}
+
+/* ----------------------- animation ---------------------*/
+.contactWrapper .hidden{
+    opacity: 0;
+    transition: all 1s;
+    filter: blur(5px);
+    transform: translateX(-100%);
+}
+
+@media(prefers-reduced-motion) {
+    .hidden {
+        transition: none;
+    }
+}
+
+.contactWrapper .show{
+    transition: all 1s;
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+    
+}
+
+/* --------------------------------------------- */
+
+.contactHeaderWrapper{
+    width: 100%;
+    height: 250px;
+    background-color: #fff;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 70px;
+}
+
+
+.contactHeaderWrapper .contactHeader{
+    margin-right: 660px;
+    width: 60%;
+    max-width: 591px;
+    height: 125px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    color: #333;
+    font-family: Montserrat;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+
+}
+
+.contactHeaderWrapper .contactHeader div{
+    color: #3b76ef;
+    margin-left: 15px;
+    margin-right: 10px;
+}
+
+.demoWrapper{
+    width: 100%;
+    height: 775px;
+    top: 320px;
+    position: absolute;
+    background-color: #3b76ef;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.demoGrad{
+    position: absolute;
+    top: 320px;
+    width: 100%;
+    height: 775px;
+    background: linear-gradient(90deg, #59D294 0%, rgba(89, 210, 148, 0.54) 35.50%, rgba(89, 210, 148, 0.00) 100%);
+}
+
+.demoContainer{
+    width: 90%;
+    max-width: 1315px;
+    height: 620px;
+    display: grid;
+    grid-template-columns: 30% 46%;
+    z-index: 1;
+    gap: 24%;
+}
+
+.demoContainer .demoText{
+    margin-left: 30px;
+    width: 405px;
+    height: 145px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.demoContainer .demoText div:nth-child(1){
+    text-align: left;
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+
+}
+
+.demoContainer .demoText div:nth-child(2){
+    text-align: left;
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+
+}
+
+.demoForm{
+    width: 100%;
+    height: 620px;
+    background-color: #FFF;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 20px 10px 30px 5px rgba(44, 44, 44, 0.25);
+}
+
+@media only screen and (max-width: 1300px) and (min-width: 1000px) {
+    .contactHeaderWrapper .contactHeader{
+        margin-right: 500px;
+        height: 100px;
+        font-size: 40px;
+        
+    }
+    .demoContainer{
+        width: 90%;
+        max-width: 1315px;
+        height: 620px;
+        display: grid;
+        grid-template-columns: 30% 46%;
+        z-index: 1;
+        gap: 15%;
+    }
+    
+}
+
+@media only screen and (max-width: 999px) {
+    .contactWrapper{
+        top: 78px;
+        height: 1350px;
+        
+    }
+    .contactHeaderWrapper .contactHeader{
+        margin-right: 0px;
+        width: 80%;
+        min-width: 250px;
+        height: 55px;
+        font-size: 20px;
+    
+    }
+    .contactHeaderWrapper .contactHeader div{
+        margin-left: 8px;
+    }
+    .demoWrapper{
+        width: 100%;
+        height: 775px;
+        top: 320px;
+        position: absolute;
+        background-color: #3b76ef;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    
+    }
+    
+    .demoGrad{
+        height: 775px;
+
+    }
+
+    .demoContainer{
+        width: 80%;
+        min-width: 250px;
+        height: 550px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0px;
+    }
+
+    .demoContainer .demoText{
+        width: 100%;
+        
+    }
+    .demoContainer .demoText div:nth-child(1){
+        text-align: left;
+        width: 100%;
+        color: #FFF;
+        font-family: Montserrat;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    
+    }
+    
+    .demoContainer .demoText div:nth-child(2){
+        text-align: left;
+        color: #FFF;
+        font-family: Montserrat;
+        font-size: 12px;
+        width: 100%;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    
+    }
+    .demoForm{
+        width: 100%;
+        max-width: 300px;
+        height: 360px;
+        flex-direction: column;
+        padding-top: 20px;
+        
+    }
+}

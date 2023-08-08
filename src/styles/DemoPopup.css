@@ -1,0 +1,155 @@
+.popupWrapper{
+    width: 80%;
+    max-width: 450px;
+    height: 499px;
+    position: fixed;
+    border-radius: 0px 0px 12px 12px;
+    background: #EFF2F8;
+    
+    top: 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+.popUpLogo{
+    display: none;
+}
+
+.popUpHeader{
+    justify-content: center;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    color: #333;
+    font-family: Montserrat;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    width: 100%;
+    height: 39px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+
+}
+
+.popUpHeader div{
+    margin-left: 10px;
+    color: #59D294;
+}
+
+.popUpDiv{
+
+    margin-left: 32px;
+    text-align: left;
+    color: #000;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 5px;
+
+}
+
+.popUpIn{
+    width: 392px;
+    height: 36px;
+    border: none;
+    background-color: #FFF;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    margin-left: 22px;
+    border-radius: 5px;
+    
+}
+
+.popUpButton{
+    width: 150px;
+    height: 45px;
+    border-radius: 5px;
+    background: #59D294;
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    border: none;
+    position: absolute;
+    bottom: 20px;
+    right: 22px;
+    transition: 0.5s;
+
+}
+
+.popUpButton:hover{
+    color: #59D294;
+    background-color: #FFF;
+}
+
+@media only screen and (max-width: 999px) {
+    .popupWrapper{
+        width: 80%;
+        min-width: 250px;
+        height: 450px;
+        
+    }
+    
+    .popUpLogo{
+        position: relative;
+        top: 10px;
+        left: 10px;
+        width: 178px;
+        height: 32.87px;
+        background-image: url(../images/login-images/Group\ 22logoLogin.svg);
+        background-size: cover;
+    }
+    
+    .popUpHeader{
+        justify-self: center;
+        margin-bottom: 50px;
+        margin-top: 50px;
+        font-size: 20px;
+    
+    }
+    
+    .popUpHeader div{
+        margin-left: 10px;
+        color: #59D294;
+    }
+    
+    .popUpDiv{
+        margin-left: 20px;
+        font-size: 10px;
+        margin-bottom: 5px;
+    
+    }
+    
+    .popUpIn{
+        width: 90%;
+        height: 30px;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 400;
+        margin-bottom: 20px;
+        margin-left: 10px;
+        
+        
+    }
+    
+    .popUpButton{
+        width: 100px;
+        height: 30px;
+        font-size: 10px;
+        bottom: 20px;
+        right: 22px;
+        transition: 0.5s;
+    
+    }
+}

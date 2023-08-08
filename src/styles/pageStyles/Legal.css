@@ -1,0 +1,117 @@
+.legalWrapper{
+    width: 100%;
+    height: 3200px;
+    position: absolute;
+    top: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.legalAlign{
+    width: 80%;
+    height: 2800px;
+    gap: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.backHome{
+    width: 191px;
+    height: 35px;
+    border: none;
+    border-radius: 5px;
+    background: #3B76EF;
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    transition: 0.5s;
+    position: relative;
+
+
+}
+
+.backHome:hover{
+    background-color: #FFF;
+    color: #3B76EF;
+}
+
+.legalContainer{
+    width: 100%;
+    max-width: 1400px;
+    height: 2500px;
+    background-color: #fff;
+    box-shadow: 22px 14px 30px 0px rgba(177, 177, 177, 0.25);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 30px;
+
+}
+
+.lPara{
+    text-align: left;
+    color: #333;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.lPara div{
+    font-weight: 600;
+    text-decoration: underline;
+    margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 768px){
+    .legalWrapper{
+        justify-content: flex-start;
+        padding-top: 50px;
+        
+    }
+    .legalContainer{
+        width: 80%;
+        max-width: 1400px;
+        height: 2500px;
+        background-color: #fff;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding: 30px;
+    
+    }
+    .backHome{
+        width: 100px;
+        height: 25px;
+        border: none;
+        border-radius: 5px;
+        background: #3B76EF;
+        color: #FFF;
+        font-family: Montserrat;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        transition: 0.5s;
+        position: relative;
+    
+    
+    }
+    .lPara{
+        font-size: 10px;
+    }
+}

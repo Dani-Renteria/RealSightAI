@@ -1,0 +1,461 @@
+.solutionWrapper{
+    width: 100%;
+    height: 3150px;
+    top:88px;
+    position: absolute;
+    background: linear-gradient(180deg, rgba(59, 118, 239, 0.30) 0%,rgba(239, 242, 248, 1) 15.50%);
+}
+
+/* ----------------------- animation ---------------------*/
+.solutionWrapper .hidden{
+    opacity: 0;
+    transition: all 1s;
+    filter: blur(10px);
+    transform: translateX(-100%);
+}
+
+@media(prefers-reduced-motion) {
+    .hidden {
+        transition: none;
+    }
+}
+
+.solutionWrapper .show{
+    transition: all 1s;
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+    
+}
+
+/* --------------------------------------------- */
+
+.solutionHeaderWrapper{
+    width: 100%;
+    position: absolute;
+    top: 88px;
+    height: 430px;
+    background-color: #3b76ef;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0px 10px 20px rgba(129, 128, 128, 0.5);
+
+}
+
+.solutionHeaderWrapper .solutionHeadContainer{
+    width: 90%;
+    height: 430px;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 48% 52%;
+    max-width: 1400px;
+}
+
+.solutionHeaderWrapper .solutionHeadContainer .solTextContainer{
+    width: 90%;
+    display: flex;
+}
+
+.solutionHeaderWrapper .solutionHeadContainer .solTextContainer .solText{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    width: 100%;
+    height: 390px;
+    gap: 15px;
+    padding-left: 20px;
+}
+
+.solText div:nth-child(2){
+    transition-delay: 200ms;
+}
+
+.solutionHeaderWrapper .solutionHeadContainer .solTextContainer .solText div:nth-child(1){
+    color: #FFF;
+    font-family: Montserrat;
+    width: 100%;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: left;
+
+}
+.solutionHeaderWrapper .solutionHeadContainer .solTextContainer .solText div:nth-child(2){
+    text-align: left;
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    
+}
+
+.solutionHeaderWrapper .solutionHeadContainer img{
+    height: 430px;
+    position: relative;
+    z-index: 1;
+    right: 400px;
+    
+
+}
+
+
+
+.solutionHeaderWrapper .solutionHeadContainer .solImg{
+    left: 50%;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-image: url(../../images/solutions-images/Untitled\ \(1500\ ×\ 1500\ px\)\ \(1500\ ×\ 1000\ px\).jpg);
+    background-size: 50%;
+    background-repeat: repeat-x;
+    background-position-x: right;
+    
+}
+
+
+/* ---------------------------- Header Ends Skyline Begins -----------------*/
+.solutionSky{
+    top: 700px;
+    position: absolute;
+    width: 100%;
+    height: 382px;
+    background-image: url(../../images/solutions-images/Group\ 18SolutionSky.svg);
+}
+
+/* --------- */
+
+.storiesWrapper{
+    width: 100%;
+    height: 1700px;
+    background-color: #FFF;
+    position: absolute;
+    top: 1080px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.storiesWrapper .storiesContainer{
+    width: 90%;
+    height: 1650px;
+    display: flex;
+    flex-direction: column;
+    gap: 200px;
+    max-width: 1400px;
+
+}
+
+.storiesWrapper .storiesContainer .storRow{
+    display: grid;
+    height: 400px;
+    grid-template-columns: 51% 44%;
+    align-items: center;
+    gap: 50px;
+    justify-content: center;
+
+}
+
+.storImg{
+    width: 557px;
+    height: 360px;
+    background-color: #FFF;
+    border-radius: 12px;
+    box-shadow: 0px 10px 20px rgba(195, 193, 193, 0.5);
+
+
+}
+.storImg.Two {
+    background-image: url(../../images/solutions-images/speed.jpg);
+    background-size: cover;
+}
+    
+.storImg.One{
+    background-image: url(../../images/solutions-images/group.jpg);
+    background-size: cover;
+}
+
+.storImg.Three{
+    background-image: url(../../images/solutions-images/costSavings.jpg);
+    background-size: cover;
+}
+
+.rowInfo{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.rowInfo div:nth-child(1){
+    color: #000;
+    text-align: left;
+    font-family: Montserrat;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+
+}
+
+.rowInfo div:nth-child(2){
+    text-align: left;
+    color: #333;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+
+}
+
+.storRowTwo{
+    display: grid;
+    gap: 50px;
+    grid-template-columns: 44% 51%;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+@media only screen and (max-width: 1300px) and (min-width: 1000px) {
+    
+    .solutionHeaderWrapper .solutionHeadContainer{
+        width: 90%;
+        height: 400px;
+    }
+    
+    .solutionHeaderWrapper .solutionHeadContainer .solTextContainer{
+        width: 90%;
+        display: flex;
+    }
+    
+    .solutionHeaderWrapper .solutionHeadContainer .solTextContainer .solText{
+        padding-left: 30px;
+    }
+    
+    .solutionHeaderWrapper .solutionHeadContainer .solTextContainer .solText div:nth-child(1){
+        width: 90%;
+        font-size: 35px;
+    }
+    .solutionHeaderWrapper .solutionHeadContainer .solTextContainer .solText div:nth-child(2){
+        font-size: 15px;
+        width: 90%;
+    }
+    
+    .solutionHeaderWrapper .solutionHeadContainer img{
+        height: 430px;
+        position: relative;
+        z-index: 1;
+        right: 400px;
+        
+    
+    }
+    
+    
+    
+    .solutionHeaderWrapper .solutionHeadContainer .solImg{
+        left: 50%;
+        top: 0px;
+        height: 430px;
+        width: 100%;
+        
+        position: absolute;
+        background-image: url(../../images/solutions-images/Untitled\ \(1500\ ×\ 1500\ px\)\ \(1500\ ×\ 1000\ px\).jpg);
+        background-size: 50%;
+        background-repeat: repeat-x;
+        background-position-x: right;
+        
+    }
+
+    .rowInfo div:nth-child(1){
+    color: #000;
+    text-align: left;
+    font-family: Montserrat;
+    font-size: 30px;
+    width: 80%;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+
+}
+
+.rowInfo div:nth-child(2){
+    text-align: left;
+    width: 80%;
+    color: #333;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+
+}
+
+.storRowTwo{
+    display: grid;
+    gap: 10%;
+    grid-template-columns: 44% 51%;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+
+}
+.storImg{
+    width: 90%;
+    height: 80%;
+    background-color: #FFF;
+    border-radius: 12px;
+    box-shadow: 0px 10px 20px rgba(195, 193, 193, 0.5);
+
+
+}
+}
+
+@media only screen and (max-width: 999px) {
+    .solutionWrapper{
+        top:78px;
+        height: 3040px;
+        
+    }
+    .solutionHeaderWrapper{
+        width: 100%;
+        position: absolute;
+        top: 88px;
+        height: 430px;
+        background-color: #3b76ef;
+        display: flex;
+        justify-content: center;
+        box-shadow: 0px 10px 20px rgba(129, 128, 128, 0.5);
+    
+    }
+    
+    .solutionHeaderWrapper .solutionHeadContainer{
+        width: 80%;
+        min-width: 220px;
+        height: 430px;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .solutionHeaderWrapper .solutionHeadContainer .solTextContainer{
+        width: 100%;
+        display: flex;
+    }
+    
+    .solutionHeaderWrapper .solutionHeadContainer .solTextContainer .solText{
+        width: 100%;
+        gap: 15px;
+        padding-left: 0px;
+    }
+    
+    
+    .solutionHeaderWrapper .solutionHeadContainer .solTextContainer .solText div:nth-child(1){
+        width: 100%;
+        font-size: 25px;
+    
+    }
+    .solutionHeaderWrapper .solutionHeadContainer .solTextContainer .solText div:nth-child(2){
+        font-size: 12px;
+    }
+    
+    .solutionHeaderWrapper .solutionHeadContainer img{
+        display: none;
+    }
+
+    .solutionSky{
+        top: 550px;
+        position: absolute;
+        width: 100%;
+        height: 382px;
+        background-image: url(../../images/solutions-images/Group\ 18SolutionSky.svg);
+    }
+    
+    
+    .solutionHeaderWrapper .solutionHeadContainer .solImg{
+        display: none;
+    }
+
+    .storiesWrapper{
+        top: 930px;
+        height: 1800px;
+        z-index: 2;
+    }
+
+
+    .storiesWrapper .storiesContainer{
+        width: 80%;
+        min-width: 250px;
+        height: 1700px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+    
+    }
+    
+    .storiesWrapper .storiesContainer .storRow{
+        display: flex;
+        width: 100%;
+        height: 500px;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+        justify-content: center;
+        
+        
+    
+    }
+    
+    .storImg{
+        width: 250px;
+        height: 200px;
+        background-position: center;
+    
+    
+    }
+    
+    .rowInfo{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        
+    }
+    
+    .rowInfo div:nth-child(1){
+        font-size: 20px;
+        width: 100%;
+        padding-left: 0px;
+    
+    }
+    
+    .rowInfo div:nth-child(2){
+        width: 100%;
+        font-size: 12px;
+        padding-left: 0px;
+    
+    }
+    
+    .storRowTwo{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 50px;
+        justify-content: center;
+        height: 500px;
+    
+    }
+    
+}
+
+
+
+
+

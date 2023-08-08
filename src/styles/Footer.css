@@ -1,0 +1,240 @@
+.footerWrapper{
+    display: flex;
+    justify-content: center;
+    min-height: 335px;
+    z-index: 1;
+    width: 100%;
+    height: 335px;
+    background: linear-gradient(360deg, rgba(111, 158, 252, 0.94) 0%, rgba(239, 242, 248, 0.00) 90%);
+}
+
+.footerContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    align-items: center;
+    justify-content: flex-end;
+    height: 335px;
+
+
+}
+
+.footerContainer .footSectionOne{
+    width: 88%;
+    max-width: 1400px;
+    height: 73px;
+    display: grid;
+    gap: 20%;
+    align-items: center;
+    grid-template-columns: 30% 60%;
+}
+.footerContainer .footSectionOne img{
+    width: 90%;
+    height: 73px;
+    
+}
+
+.footerContainer .footSectionOne .footLinks{
+    width: 100%;
+    min-width: 150px;
+    height: 57px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8%;
+    
+
+}
+
+.footerContainer .footSectionOne .footLinks .active{
+    color: #333;
+}
+
+.footerContainer .footSectionOne .footLinks .navLink{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--main-blue, #3B76EF);
+    font-family: Montserrat;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    transition: 0.8s;
+}
+
+.footerContainer .footSectionOne .footLinks .navLink:hover{
+    color: #333;
+}
+
+.footerContainer .footSectionTwo{
+    
+    width: 88%;
+    max-width: 1400px;
+    height: 80px;
+    display: grid;
+    gap: 20%;
+    align-items: center;
+    grid-template-columns: 30% 60%;
+    
+}
+
+.footerContainer .footSectionTwo .linksCopy{
+    width: 100%;
+    height: 73px;
+    display: flex;
+    flex-direction: column;
+    justify-content:  center;
+    text-align: left;
+    gap: 2%;
+    color: #000;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    padding-left: 20%;
+    
+}
+
+.footerContainer .footSectionTwo .linksCopy .social{
+    width: 72px;
+    height: 22px;
+    display: grid;
+    
+    align-items: center;
+    gap: 10px;
+    grid-template-columns: 22px 22px;
+}
+
+.footerContainer .footSectionTwo .linksCopy .social a button{
+    background: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    width: 15px;
+    height: 15px;
+
+}
+
+.footerContainer .footSectionTwo .linksCopy .social a button img{
+    width: 15px;
+    height: 15px;
+}
+
+.footerContainer .footSectionTwo .legal{
+    width: 100%;
+    height: 45px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12%;
+    
+}
+
+.footerContainer .footSectionTwo .legal .navLink{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #333;
+    font-family: Montserrat;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    transition: 0.8s;
+
+}
+
+@media only screen and (max-width: 999px) {
+
+    .footerWrapper{
+        display: flex;
+        justify-content: center;
+        min-height: 335px;
+        z-index: 1;
+        width: 100%;
+        height: 335px;
+        background: linear-gradient(360deg, rgba(111, 158, 252, 0.94) 0%, rgba(239, 242, 248, 0.00) 90%);
+    }
+    
+    .footerContainer{
+        gap: 10px;
+    
+    }
+    
+    .footerContainer .footSectionOne{
+        width: 88%;
+        height: 73px;
+        display: grid;
+        gap: 20%;
+        align-items: center;
+        grid-template-columns: 30% 60%;
+    }
+    .footerContainer .footSectionOne img{
+        width: 80%;
+        margin-left: 20px;
+        
+    }
+    
+    .footerContainer .footSectionOne .footLinks{
+        display: none;
+        
+    
+    }
+
+    .footerContainer .footSectionTwo{
+    
+        width: 88%;
+        height: 80px;
+        display: grid;
+        gap: 8%;
+        align-items: center;
+        grid-template-columns: 30% 60%;
+        
+    }
+    
+    .footerContainer .footSectionTwo .linksCopy{
+        width: 80%;
+        height: 73px;
+        gap: 0%;
+        
+        font-size: 8px;
+        padding-left: 20%;
+        
+    }
+    
+    .footerContainer .footSectionTwo .linksCopy .social{
+        gap: 8px;
+        grid-template-columns: 18px 18px;
+    }
+    
+    .footerContainer .footSectionTwo .linksCopy .social a button{
+        width: 12px;
+        height: 12px;
+    
+    }
+    
+    .footerContainer .footSectionTwo .linksCopy .social a button img{
+        width: 12px;
+        height: 12px;
+    }
+    
+    .footerContainer .footSectionTwo .legal{
+        width: 90%;
+        height: 45px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 5%;
+        
+    }
+    
+    .footerContainer .footSectionTwo .legal .navLink{
+        font-size: 8px;
+        
+    
+    }
+
+
+}

@@ -1,0 +1,358 @@
+
+/*
+position: fixed;
+*/
+
+.navWrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    width: 100%;
+    height: 88px;
+    transition: 0.5s;
+    background: #EFF2F8;
+    
+}
+
+.navContainer{
+    width: 95%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    
+}
+
+.navContainer .logoMobile{
+    position: relative;
+    left: 0px;
+    background-color: #EFF2F8;
+    top: 5%;
+    width: 50%;
+    max-width: 150px;
+    height: 80%;
+    
+
+}
+
+.navContainer .logoMobile img{
+    width: 90%;
+    height: 80%;
+}
+
+
+
+.navWrapper:hover{
+    box-shadow: 0px 10px 20px rgba(129, 128, 128, 0.5);
+}
+
+
+/* ------------------------- Hamburger Menu --------------------------*/
+
+
+.navContainer .hamburger{
+    position: relative;
+    
+    display: block;
+    width: 40px;
+    cursor: pointer;
+    appearance: none;
+    background: none;
+    border: none;
+}
+
+.hamburger .bar, .hamburger:after, .hamburger::before{
+    width: 100%;
+    height: 3px;
+    background-color: #3B76EF;
+    border-radius: 5px;
+    margin: 5px 0px;
+    transition: 0.5s;
+    content: '';
+    display: block;
+
+}
+
+.hamburger.is-active:before{
+    opacity: 0;
+    transform: translate(0px, 10px);
+    border-radius: 2px;
+}
+
+.hamburger.is-active:after{
+    opacity: 0;
+    transform: translate(0px -10px);
+    border-radius: 2px;
+}
+
+.hamburger.is-active .bar{
+    opacity: 1;
+    border-radius: 5px;
+    border-style: solid;
+    background-color: #EFF2F8;
+    border-color: #3B76EF;
+}
+
+.mobileLinks{
+    display: block;
+    position: fixed;
+    top:78px;
+    left: 101%;
+    width: 100%;
+    min-height: 100vh;
+    z-index: 0;
+    background-color: #EFF2F8;
+    background: linear-gradient(270deg, rgba(59, 118, 239, 0.50) 0%, rgba(217, 217, 217, 0.00) 100%);
+    box-shadow: 0px 10px 20px rgba(129, 128, 128, 0.5);
+    backdrop-filter: blur(20px);
+    padding-top: 50px;
+    padding-bottom: 40px;
+    transition: 0.5s;
+    filter: blur(5px);
+    
+}
+
+.mobileLinks.is-active {
+    left: 0%;
+    right: 0;
+    filter: blur(0);
+    
+}
+
+.mobileLinks .navLink{
+    display: block;
+    text-align: center;
+    width: 100%;
+    max-width: 200px;
+    min-width: 150px;
+    margin: 0 auto 16px;
+    padding: 12px 16px;
+    /*background-color: #3B76EF;*/
+    background-color: rgba(239, 242, 248, 0.70);
+    /*color: #EFF2F8;*/
+    color: #3B76EF;
+    text-decoration: none;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 5px;
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.3);
+    transition: 0.5s;
+    
+}
+.mobileLinks .navLink.login{
+    background-color: rgba(51, 51, 51, 0.70);
+    color: #FFF;
+
+}
+
+.mobileLinks .navLink:hover{
+    background-color: #FFF;
+    color: #333333;
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.3);
+    
+}
+
+@media only screen and (min-width: 768px) {
+
+    .logoMobile{
+        display: none;
+    }
+    .navContainer .hamburger{
+        display:none;
+    }
+    .mobileLinks{
+        display: none;
+    }
+    
+}
+
+/* ----------------- Logo + Name styling -----------------------*/
+
+.logoWrapper{
+    width: 22%;
+    min-width: 150px;
+    max-width: 200px;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    
+}
+
+.logoWrapper img{
+    height: 80%;
+    width: 95%;
+}
+
+/* ----------------- -----------------------*/
+
+.navWrapper .navContainer .commonLinks{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    padding-right: 40px;
+    left: 0%;
+    flex-direction: row;
+    gap: 25px;
+    width: 100%;
+    height: 100%;
+    
+}
+
+.navWrapper .commonLinks .navLink{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--main-blue, #3B76EF);
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    transition: 0.8s;
+    width: 90%;
+    max-width: 100px;
+}
+
+
+.navWrapper  .commonLinks .active{
+    color: #333333;
+}
+
+.navWrapper .commonLinks .navLink:hover{
+    color:#333333;
+}
+
+.navWrapper .commonLinks .demoNav{
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    width: 15%;
+    max-width: 150px;
+    min-width: 90px;
+    height: 40%;
+    border-radius: 7px;
+    border: none;
+    background: #59D294;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    transition: 0.6s;
+    
+
+}
+.navWrapper .navContainer .commonLinks .demoNav:hover{
+    background-color: #FFF;
+    color: #59D294;
+}
+
+.navWrapper .commonLinks  .aLogin{
+    width: 15%;
+    height: 40%;
+    max-width: 150px;
+    min-width: 90px;
+    
+}
+
+.navWrapper .commonLinks  .aLogin .login{
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    border-radius: 7px;
+    border: none;
+    width: 100%;
+    height: 100%;
+    background: var(--main-blue, #3B76EF);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    transition: 0.6s;
+
+}
+
+.navWrapper .commonLinks .login:hover{
+    background-color: #FFF;
+    color: var(--main-blue, #3B76EF);
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 1300px){
+
+
+    .navWrapper .linkWrapper .commonLinks{
+        width: 460px;
+        gap: 50px;
+    }
+
+    .navWrapper .linkWrapper .commonLinks .navLink{
+        font-size: 10px;
+    }
+    .navWrapper .linkWrapper .buttonLinks .demoNav{
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        width: 100px;
+        height: 30px;
+
+    }
+    .navWrapper .linkWrapper .buttonLinks  .aLogin .login{
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        width: 100px;
+        height: 30px;
+
+    }
+
+    .logoWrapper{
+        width: 160px;
+        
+    }
+}
+
+
+@media only screen and (max-width: 767px){
+    .navWrapper{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 10;
+        width: 100%;
+        height: 78px;
+        transition: 0.5s;
+        background: #EFF2F8;
+        
+    }
+
+    .navContainer{
+        width: 95%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 50%;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    .navWrapper .navContainer .commonLinks{
+        display: none;
+    }
+
+    .logoWrapper{
+        width: 184px;
+        
+        
+    }
+}
+
