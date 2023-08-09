@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
 import "../styles/Navbar.css";
 import logo from "../images/navigation-images/Logo + Name.svg";
 import DemoPopup from "./DemoPopup";
@@ -18,21 +17,21 @@ function Navbar() {
             <div className="logoWrapper">
               <img src={logo} alt="logo" />
             </div>
-            <NavLink className="navLink" to="/" href="#home">
+            <a href="/" className="navLink">
               Home
-            </NavLink>
-            <NavLink className="navLink" to="/product">
+            </a>
+            <a className="navLink" href="product">
               Product
-            </NavLink>
-            <NavLink className="navLink" to="/solution">
+            </a>
+            <a className="navLink" href="solution">
               Solution
-            </NavLink>
-            <NavLink className="navLink space" to="/ourteam">
+            </a>
+            <a className="navLink space" href="ourteam">
               Our Team
-            </NavLink>
-            <NavLink className="navLink" to="/contact">
+            </a>
+            <a className="navLink" href="contact">
               Contact
-            </NavLink>
+            </a>
 
             <button
               className="demoNav"
@@ -42,8 +41,8 @@ function Navbar() {
               Try demo
             </button>
 
-            <a className="aLogin" href="/login">
-              <button to="/login" className="login" type="button">
+            <a className="aLogin" href="login">
+              <button className="login" type="button">
                 Login
               </button>
             </a>
@@ -56,24 +55,24 @@ function Navbar() {
           </button>
         </div>
         <div className={`mobileLinks ${menu ? "is-active" : ""}`}>
-          <NavLink className="navLink" to="/" href="#home">
+          <a className="navLink" href="/">
             Home
-          </NavLink>
-          <NavLink className="navLink" to="/product">
+          </a>
+          <a className="navLink" href="product">
             Product
-          </NavLink>
-          <NavLink className="navLink" to="/solution">
+          </a>
+          <a className="navLink" href="solution">
             Solution
-          </NavLink>
-          <NavLink className="navLink" to="/ourteam">
+          </a>
+          <a className="navLink" href="ourteam">
             Our Team
-          </NavLink>
-          <NavLink className="navLink" to="/contact">
+          </a>
+          <a className="navLink" href="contact">
             Contact
-          </NavLink>
-          <NavLink className="navLink login" to="/login">
+          </a>
+          <a className="navLink login" href="login">
             Login
-          </NavLink>
+          </a>
         </div>
       </div>
 

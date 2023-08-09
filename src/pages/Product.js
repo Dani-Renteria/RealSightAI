@@ -46,32 +46,34 @@ function Product() {
         </div>
       )}
       <div className="productOverview">
-        <div
-          ref={start}
-          className={`productInfo ${
-            startIsVisible === true ? "show" : "hidden"
-          }`}
-        >
-          <div className="proInfoHeader">Real estate operation software</div>
-          <div className="proInfoSub">
-            Streamline operations, optimize efficiency, and drive
-            sustainability. Unlock personalized insights and cost-saving
-            opportunities.
-          </div>
-          <button
-            className="proDemo"
-            type="button"
-            onClick={() => setActive(true)}
+        <div className="productAlign">
+          <div
+            ref={start}
+            className={`productInfo ${
+              startIsVisible === true ? "show" : "hidden"
+            }`}
           >
-            Try demo
-          </button>
+            <div className="proInfoHeader">Real estate operation software</div>
+            <div className="proInfoSub">
+              Streamline operations, optimize efficiency, and drive
+              sustainability. Unlock personalized insights and cost-saving
+              opportunities.
+            </div>
+            <button
+              className="proDemo"
+              type="button"
+              onClick={() => setActive(true)}
+            >
+              Try demo
+            </button>
+          </div>
+          <img
+            ref={start}
+            className={`hidden ${startIsVisible === true ? "show" : "hidden"}`}
+            src={webpage}
+            alt="website"
+          />
         </div>
-        <img
-          ref={start}
-          className={`hidden ${startIsVisible === true ? "show" : "hidden"}`}
-          src={webpage}
-          alt="website"
-        />
       </div>
       <div className="productSky" />
       <div ref={points} className="productFurtherDetails">

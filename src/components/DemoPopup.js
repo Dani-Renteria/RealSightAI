@@ -11,7 +11,7 @@ function DemoPopup() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    alert(data.name);
+    alert("Test completed " + data.name);
     console.log(data);
   };
 

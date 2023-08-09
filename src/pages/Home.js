@@ -9,6 +9,7 @@ import chat from "../images/Framechat.svg";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import DemoPopup from "../components/DemoPopup";
+import chatOnly from "../images/GroupjustChat.svg";
 
 function Home() {
   window.onload = function () {
@@ -84,9 +85,8 @@ function Home() {
             businesses
           </div>
         </div>
-        <div className="ourPoints">
+        <div ref={points} className="ourPoints">
           <div
-            ref={points}
             className={`point ${pointsAreVisible === true ? "show" : "hidden"}`}
           >
             <img src={cost} alt="cost icon" />
@@ -142,7 +142,8 @@ function Home() {
           <div className="assistant">
             Like having your own personal assistant
           </div>
-          <img src={chat} alt="chat" />
+          <img src={chat} alt="chat" className="chatShow" />
+          <img src={chatOnly} alt="chat box" className="chatHidden" />
         </div>
       </div>
       {/** Blue container ends. Last section before the demo starts */}
