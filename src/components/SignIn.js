@@ -12,8 +12,7 @@ function SignIn() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    alert(data.userName);
-    console.log(data);
+    alert("Sign in currently unavavailable. Please return to the home page.");
   };
   return (
     <form method="post" onSubmit={handleSubmit} className="loginForm">
@@ -40,7 +39,7 @@ function SignIn() {
         placeholder="Enter your password"
       />
       <div className="privacyTxt">
-        By continuing you agree to RealSight AI's{" "}
+        By continuing you agree to RealSight AI's
         <NavLink to="/privacy" reloadDocument>
           privacy policy
         </NavLink>

@@ -11,7 +11,11 @@ function Form() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    alert(data.name);
+    alert(
+      "Test completed " +
+        data.name +
+        ". No information was recorded at this time."
+    );
     console.log(data);
   };
 
