@@ -32,9 +32,6 @@ function Home() {
 
   return (
     <div className="homeWrapper">
-      <div className="navLoc">
-        <Navbar />
-      </div>
       {active === true && (
         <div className="demoHomePopup">
           <button

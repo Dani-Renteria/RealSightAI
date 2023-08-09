@@ -16,7 +16,6 @@ function SignIn() {
   };
   return (
     <form method="post" onSubmit={handleSubmit} className="loginForm">
-      <div className="loginLogoContainer" />
       <h1>Welcome back</h1>
       <div className="loginDiv">Username</div>
       <input
@@ -40,7 +39,7 @@ function SignIn() {
       />
       <div className="privacyTxt">
         By continuing you agree to RealSight AI's
-        <NavLink to="/privacy" reloadDocument>
+        <NavLink className="privacyL" to="/privacy" reloadDocument>
           privacy policy
         </NavLink>
       </div>

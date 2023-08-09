@@ -16,9 +16,6 @@ function Solution() {
 
   return (
     <div className="solutionWrapper">
-      <div className="navLoc">
-        <Navbar />
-      </div>
       <div ref={start} className="solutionHeaderWrapper">
         <div className="solutionHeadContainer">
           <div className="solTextContainer">

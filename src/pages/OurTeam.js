@@ -17,9 +17,6 @@ function OurTeam() {
 
   return (
     <div className="teamWrapper">
-      <div className="navLoc">
-        <Navbar />
-      </div>
       <div
         ref={start}
         className={`teamHeaderWrapper ${

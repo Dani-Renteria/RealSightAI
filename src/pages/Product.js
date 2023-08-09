@@ -30,9 +30,6 @@ function Product() {
 
   return (
     <div className="productWrapper">
-      <div className="navLoc">
-        <Navbar />
-      </div>
       {active === true && (
         <div className="demoHomePopup">
           <button

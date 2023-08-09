@@ -5,9 +5,6 @@ function Privacy() {
   return (
     <div className="privacyWrapper">
       <div className="privacyAlign">
-        <a href="/">
-          <button className="backHome">Return to home</button>
-        </a>
         <div className="privacyContainer">
           <div className="lPara">
             <div>Data Protection</div> As a rule the use of this website is

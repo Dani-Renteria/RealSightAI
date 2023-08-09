@@ -12,9 +12,6 @@ function Contact() {
 
   return (
     <div className="contactWrapper">
-      <div className="navLoc">
-        <Navbar />
-      </div>
       <div
         ref={start}
         className={`contactHeaderWrapper ${

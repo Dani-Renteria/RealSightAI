@@ -5,9 +5,6 @@ function Legal() {
   return (
     <div className="legalWrapper">
       <div className="legalAlign">
-        <a href="/">
-          <button className="backHome">Return to home</button>
-        </a>
         <div className="legalContainer">
           <div className="lPara">
             Legal Notice / Impressum <br /> Imprint / Angaben gemäß § 5 TMG{" "}
