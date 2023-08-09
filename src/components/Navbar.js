@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "../styles/Navbar.css";
 import logo from "../images/navigation-images/Logo + Name.svg";
 import DemoPopup from "./DemoPopup";
+import { NavLink } from "react-router-dom";
 
 function Navbar() {
   const [active, setActive] = useState(false);
@@ -17,21 +18,21 @@ function Navbar() {
             <div className="logoWrapper">
               <img src={logo} alt="logo" />
             </div>
-            <a href="/" className="navLink">
+            <NavLink to="/" className="navLink" reloadDocument>
               Home
-            </a>
-            <a className="navLink" href="product">
+            </NavLink>
+            <NavLink className="navLink" to="/product" reloadDocument>
               Product
-            </a>
-            <a className="navLink" href="solution">
+            </NavLink>
+            <NavLink className="navLink" to="/solution" reloadDocument>
               Solution
-            </a>
-            <a className="navLink space" href="ourteam">
+            </NavLink>
+            <NavLink className="navLink space" to="/ourteam" reloadDocument>
               Our Team
-            </a>
-            <a className="navLink" href="contact">
+            </NavLink>
+            <NavLink className="navLink" to="/contact" reloadDocument>
               Contact
-            </a>
+            </NavLink>
 
             <button
               className="demoNav"
@@ -41,11 +42,11 @@ function Navbar() {
               Try demo
             </button>
 
-            <a className="aLogin" href="login">
+            <NavLink className="aLogin" to="/login" reloadDocument>
               <button className="login" type="button">
                 Login
               </button>
-            </a>
+            </NavLink>
           </div>
           <button
             className={`hamburger ${menu ? "is-active" : ""}`}
@@ -55,24 +56,24 @@ function Navbar() {
           </button>
         </div>
         <div className={`mobileLinks ${menu ? "is-active" : ""}`}>
-          <a className="navLink" href="/">
+          <NavLink className="navLink" to="/">
             Home
-          </a>
-          <a className="navLink" href="product">
+          </NavLink>
+          <NavLink className="navLink" to="/product" reloadDocument>
             Product
-          </a>
-          <a className="navLink" href="solution">
+          </NavLink>
+          <NavLink className="navLink" to="/solution" reloadDocument>
             Solution
-          </a>
-          <a className="navLink" href="ourteam">
+          </NavLink>
+          <NavLink className="navLink" to="/ourteam" reloadDocument>
             Our Team
-          </a>
-          <a className="navLink" href="contact">
+          </NavLink>
+          <NavLink className="navLink" to="/contact" reloadDocument>
             Contact
-          </a>
-          <a className="navLink login" href="login">
+          </NavLink>
+          <NavLink className="navLink login" to="/login" reloadDocument>
             Login
-          </a>
+          </NavLink>
         </div>
       </div>
 

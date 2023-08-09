@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "../styles/SignIn.css";
+import { NavLink } from "react-router-dom";
 
 function SignIn() {
   const [data, setData] = useState({ userName: "", password: "" });
@@ -40,7 +41,9 @@ function SignIn() {
       />
       <div className="privacyTxt">
         By continuing you agree to RealSight AI's{" "}
-        <a href="/privacy">privacy policy</a>
+        <NavLink to="/privacy" reloadDocument>
+          privacy policy
+        </NavLink>
       </div>
       <button className="continue" type="submit">
         Continue

@@ -11,19 +11,19 @@ function Footer() {
         <div className="footSectionOne">
           <img src={logo} alt="logo" />
           <div className="footLinks">
-            <NavLink className="navLink" to="/">
+            <NavLink className="navLink" to="/" reloadDocument>
               Home
             </NavLink>
-            <NavLink className="navLink" to="/product">
+            <NavLink className="navLink" to="/product" reloadDocument>
               Product
             </NavLink>
-            <NavLink className="navLink" to="/solution">
+            <NavLink className="navLink" to="/solution" reloadDocument>
               Solution
             </NavLink>
-            <NavLink className="navLink" to="/ourteam">
+            <NavLink className="navLink" to="/ourteam" reloadDocument>
               Our Team
             </NavLink>
-            <NavLink className="navLink" to="/contact">
+            <NavLink className="navLink" to="/contact" reloadDocument>
               Contact
             </NavLink>
           </div>
@@ -40,16 +40,16 @@ function Footer() {
             © 2023 RealSight AI. Made in Berlin.
           </div>
           <div className="legal">
-            <NavLink className="navLink" to="/termsofservice">
+            <NavLink className="navLink" to="/termsofservice" reloadDocument>
               Terms of service
             </NavLink>
-            <NavLink className="navLink" to="/privacy">
+            <NavLink className="navLink" to="/privacy" reloadDocument>
               Privacy
             </NavLink>
-            <NavLink className="navLink" to="/legalnotice">
+            <NavLink className="navLink" to="/legalnotice" reloadDocument>
               Legal notice
             </NavLink>
-            <NavLink className="navLink" to="/press">
+            <NavLink className="navLink" to="/press" reloadDocument>
               Press
             </NavLink>
           </div>
