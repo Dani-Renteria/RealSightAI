@@ -3,7 +3,6 @@ import { useInView } from "react-intersection-observer";
 import "../styles/pageStyles/Solutions.css";
 import HeaderShape from "../images/solutions-images/Vector 9solShape.svg";
 import Footer from "../components/Footer";
-import Navbar from "../components/Navbar";
 
 function Solution() {
   const { ref: start, inView: startIsVisible } = useInView();

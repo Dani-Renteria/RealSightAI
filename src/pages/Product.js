@@ -6,7 +6,6 @@ import bench from "../images/product-images/GroupBenchmark.svg";
 import Footer from "../components/Footer";
 import OuterCir from "../images/product-images/g4213CircularEcon.svg";
 import InnerCir from "../images/product-images/Circular Economy.svg";
-import Navbar from "../components/Navbar";
 import DemoPopup from "../components/DemoPopup";
 
 import insightOne from "../images/product-images/Group 23insightOne.svg";
