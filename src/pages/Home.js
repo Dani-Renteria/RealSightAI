@@ -7,7 +7,6 @@ import sustain from "../images/sustainability.svg";
 import speed from "../images/speed.svg";
 import chat from "../images/Framechat.svg";
 import Footer from "../components/Footer";
-import Navbar from "../components/Navbar";
 import DemoPopup from "../components/DemoPopup";
 import chatOnly from "../images/GroupjustChat.svg";
 
