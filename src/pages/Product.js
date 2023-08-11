@@ -69,7 +69,7 @@ function Product() {
           </div>
           <img
             ref={start}
-            className={`hidden ${startIsVisible === true ? "show" : "hidden"}`}
+            className={`  ${startIsVisible === true ? "show" : "hidden"}`}
             src={webpage}
             alt="website"
           />
