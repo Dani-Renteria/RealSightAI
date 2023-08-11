@@ -120,7 +120,7 @@ body{
 }
 
 .intro .headerOne .introSnip .bigText{
-    width: 60%;
+    width: 400px;
     text-align: left;
     color: #333;
     font-family: Montserrat;
