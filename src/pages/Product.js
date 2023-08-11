@@ -30,7 +30,7 @@ function Product() {
 
   return (
     <div className="productWrapper">
-      <div className="navLoc">
+      <div ref={start} className="navLoc">
         <Navbar />
       </div>
       {active === true && (
@@ -48,7 +48,6 @@ function Product() {
       <div className="productOverview">
         <div className="productAlign">
           <div
-            ref={start}
             className={`productInfo ${
               startIsVisible === true ? "show" : "hidden"
             }`}
@@ -68,8 +67,7 @@ function Product() {
             </button>
           </div>
           <img
-            ref={start}
-            className={`  ${startIsVisible === true ? "show" : "hidden"}`}
+            className={`web ${startIsVisible === true ? "show" : "hidden"}`}
             src={webpage}
             alt="website"
           />
