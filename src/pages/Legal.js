@@ -1,10 +1,15 @@
 import React from "react";
 import "../styles/pageStyles/Legal.css";
+import { NavLink } from "react-router-dom";
 
 function Legal() {
   return (
     <div className="legalWrapper">
       <div className="legalAlign">
+        <NavLink to="/" reloadDocument>
+          <button className="backHome">Return home</button>
+        </NavLink>
+
         <div className="legalContainer">
           <div className="lPara">
             Legal Notice / Impressum <br /> Imprint / Angaben gemäß § 5 TMG{" "}

@@ -9,6 +9,7 @@ import chat from "../images/Framechat.svg";
 import Footer from "../components/Footer";
 import DemoPopup from "../components/DemoPopup";
 import chatOnly from "../images/GroupjustChat.svg";
+import Navbar from "../components/Navbar";
 
 function Home() {
   window.onload = function () {
@@ -31,6 +32,9 @@ function Home() {
 
   return (
     <div className="homeWrapper">
+      <div className="navLoc">
+        <Navbar />
+      </div>
       {active === true && (
         <div className="demoHomePopup">
           <button
@@ -51,7 +55,7 @@ function Home() {
         >
           <div className="introSnip">
             <div className="bigText">
-              AI-powered. real estate management for enterprises
+              AI-powered real estate management for enterprises
             </div>
             <div className="subText">
               Unlock operational efficiency and improve sustainability of

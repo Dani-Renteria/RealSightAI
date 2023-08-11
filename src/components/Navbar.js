@@ -21,7 +21,7 @@ function Navbar() {
             <NavLink to="/" className="navLink" reloadDocument>
               Home
             </NavLink>
-            <NavLink className="navLink" to="product" reloadDocument>
+            <NavLink className="navLink" to="/product" reloadDocument>
               Product
             </NavLink>
             <NavLink className="navLink" to="/solution" reloadDocument>

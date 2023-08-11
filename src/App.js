@@ -9,13 +9,11 @@ import Contact from "./pages/Contact";
 import Login from "./pages/Login";
 import Legal from "./pages/Legal";
 import Privacy from "./pages/Privacy";
-import Navbar from "./components/Navbar";
 
 function App() {
   return (
     <div className="App">
       <Router>
-        <Navbar />
         <Routes>
           <Route path="/" exact element={<Home />} />
           <Route path="/product" exact element={<Product />} />

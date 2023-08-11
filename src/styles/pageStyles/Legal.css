@@ -5,7 +5,8 @@
     top: 0px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
+    padding-top: 50px;
     align-items: center;
 }
 

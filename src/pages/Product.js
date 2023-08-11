@@ -14,6 +14,7 @@ import insightTwo from "../images/product-images/Group 25insightTwo.svg";
 import actionTwo from "../images/product-images/Group 26actionTwo.svg";
 import insightThree from "../images/product-images/Group 27insightThree.svg";
 import actionThree from "../images/product-images/Group 28actionThree.svg";
+import Navbar from "../components/Navbar";
 
 function Product() {
   const [active, setActive] = useState(false);
@@ -29,6 +30,9 @@ function Product() {
 
   return (
     <div className="productWrapper">
+      <div className="navLoc">
+        <Navbar />
+      </div>
       {active === true && (
         <div className="demoHomePopup">
           <button

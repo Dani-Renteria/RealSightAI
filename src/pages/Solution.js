@@ -3,6 +3,7 @@ import { useInView } from "react-intersection-observer";
 import "../styles/pageStyles/Solutions.css";
 import HeaderShape from "../images/solutions-images/Vector 9solShape.svg";
 import Footer from "../components/Footer";
+import Navbar from "../components/Navbar";
 
 function Solution() {
   const { ref: start, inView: startIsVisible } = useInView();
@@ -15,6 +16,9 @@ function Solution() {
 
   return (
     <div className="solutionWrapper">
+      <div className="navLoc">
+        <Navbar />
+      </div>
       <div ref={start} className="solutionHeaderWrapper">
         <div className="solutionHeadContainer">
           <div className="solTextContainer">

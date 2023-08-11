@@ -1,10 +1,14 @@
 import React from "react";
 import "../styles/pageStyles/Privacy.css";
+import { NavLink } from "react-router-dom";
 
 function Privacy() {
   return (
     <div className="privacyWrapper">
       <div className="privacyAlign">
+        <NavLink to="/" reloadDocument>
+          <button className="backHome">Return home</button>
+        </NavLink>
         <div className="privacyContainer">
           <div className="lPara">
             <div>Data Protection</div> As a rule the use of this website is
