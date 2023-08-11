@@ -52,7 +52,7 @@ function Home() {
         >
           <div className="introSnip">
             <div className="bigText">
-              AI-powered real estate management for enterprises
+              AI-powered. real estate management for enterprises
             </div>
             <div className="subText">
               Unlock operational efficiency and improve sustainability of

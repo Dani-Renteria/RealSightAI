@@ -18,7 +18,6 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" exact element={<Home />} />
-          {console.log(Product)}
           <Route path="/product" exact element={<Product />} />
           <Route path="/solution" exact element={<Solution />} />
           <Route path="/ourteam" exact element={<Team />} />
